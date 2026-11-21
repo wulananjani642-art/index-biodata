@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas Kelompok - Biodata & Album</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.11.css" />
+</head>
+<body>
+
+    <div class="bg-decorations" aria-hidden="true">
+        <span class="float-item f1"><i class="fa-solid fa-star"></i></span>
+        <span class="float-item f2"><i class="fa-solid fa-heart"></i></span>
+        <span class="float-item f3"><i class="fa-solid fa-music"></i></span>
+        <span class="float-item f4"><i class="fa-solid fa-sparkles">✦</i></span>
+        <span class="float-item f5"><i class="fa-solid fa-camera-retro"></i></span>
+        <span class="float-item f6"><i class="fa-solid fa-crown"></i></span>
+        <span class="float-item f7"><i class="fa-solid fa-heart"></i></span>
+        <span class="float-item f8"><i class="fa-solid fa-star"></i></span>
+    </div>
+
+    <nav class="nav-utama">
+        <a href="#page-utama" class="nav-link btn-aktif" data-target="page-utama"><i class="fa-solid fa-house"></i> Halaman 1</a>
+        <a href="#page-biodata" class="nav-link" data-target="page-biodata"><i class="fa-solid fa-users"></i> Biodata Kami</a>
+        <a href="#page-album2" class="nav-link" data-target="page-album2"><i class="fa-solid fa-images"></i> Album Kenangan</a>
+        <a href="#page-lena" class="nav-link" data-target="page-lena">About Lena</a>
+        <a href="#page-sulastri" class="nav-link" data-target="page-sulastri">About Sulastri</a>
+        <a href="#page-tri" class="nav-link" data-target="page-tri">About Tri</a>
+        <a href="#page-wulan" class="nav-link" data-target="page-wulan">About Wulan</a>
+        <a href="#page-zihan" class="nav-link" data-target="page-zihan">About Zihan</a>
+    </nav>
+
+    <section id="page-utama" class="halaman-section aktif">
+        <div class="container hero-decorated" id="main-container">
+            <div class="corner-ornament top-left">✦</div>
+            <div class="corner-ornament top-right">✦</div>
+            <div class="corner-ornament bottom-left">✦</div>
+            <div class="corner-ornament bottom-right">✦</div>
+
+            <div class="ribbon-badge">
+                <i class="fa-solid fa-sparkles"></i>✨ Portofolio Kelompok RPL 2 • 2026 ✨
+            </div>
+
+            <h1>Selamat Datang di Website Kelompok Kami</h1>
+            <p>Tugas Web Kelompok — Profil Lengkap 5 Anggota & Galeri Album Kenangan</p>
+
+            <div class="hero-bubbles">
+                <div class="bubble-item"><i class="fa-solid fa-user-group"></i><span>5 Sahabat</span></div>
+                <div class="bubble-item"><i class="fa-solid fa-camera"></i><span>12 Kenangan</span></div>
+                <div class="bubble-item"><i class="fa-solid fa-headphones"></i><span>Musik & Video</span></div>
+            </div>
+
+            <div class="aksi-utama">
+                <a href="#page-biodata" class="btn-utama">
+                    <i class="fa-solid fa-users"></i> Lihat Biodata Kami
+                </a>
+                <a href="#page-album2" class="btn-utama btn-gelap">
+                    <i class="fa-solid fa-images"></i> Buka Album Kenangan
+                </a>
+            </div>
+
+            <div class="aksi-musik">
+                <button id="btn-musik-utama" class="btn-utama btn-hijau" onclick="toggleMusik('bg-music', 'btn-musik-utama')">
+                    <i class="fa-solid fa-play"></i> Putar Musik Latar
+                </button>
+            </div>
+        <audio id="bg-music" loop>
+    <source src="IMG-VIDIO-AUDIO/sebuah-kisah-klasik.mp4" type="audio/mp4">
+    </audio>
+    </section>
+    <section id="page-biodata" class="halaman-section">
+        <header class="page-header">
+            <span class="sub-badge"><i class="fa-solid fa-id-badge"></i> Profil Sahabat</span>
+            <h1>BIODATA KAMI</h1>
+            <div class="header-divider"><span>✿</span></div>
+        </header>
+
+        <main class="biodata-container" id="biodata-list">
+            <div class="anggota-card">
+                <div class="card-crown"><i class="fa-solid fa-crown"></i> #1</div>
+                <div class="avatar-ring">
+                    <img src="IMG-VIDIO-AUDIO/fto lna 1.jpeg" alt="Lena" onerror="this.src='https://via.placeholder.com/110?text=Lena'">
+                </div>
+                <h3>Lena Aulia Sausan Salsabila Kamandaka</h3>
+                <p>Dipanggil: <strong>Lena</strong></p>
+                <a href="#page-lena" class="btn-utama btn-kecil">
+                    <i class="fa-solid fa-user"></i> Lihat Profil
+                </a>
+            </div>
+            <div class="anggota-card">
+                <div class="card-crown"><i class="fa-solid fa-crown"></i> #2</div>
+                <div class="avatar-ring">
+                    <img src="IMG-VIDIO-AUDIO/foto ati 1.jpeg" alt="Sulastri" onerror="this.src='https://via.placeholder.com/110?text=Lastri'">
+                </div>
+                <h3>Sulastri</h3>
+                <p>Dipanggil: <strong>Lastri</strong></p>
+                <a href="#page-sulastri" class="btn-utama btn-kecil">
+                    <i class="fa-solid fa-user"></i> Lihat Profil
+                </a>
+            </div>
+            <div class="anggota-card">
+                <div class="card-crown"><i class="fa-solid fa-crown"></i> #3</div>
+                <div class="avatar-ring">
+                    <img src="IMG-VIDIO-AUDIO\foto tri 1.jpeg" alt="Tri" onerror="this.src='https://via.placeholder.com/110?text=Tri'">
+                </div>
+                <h3>Tri Rahayu</h3>
+                <p>Dipanggil: <strong>Tri</strong></p>
+                <a href="#page-tri" class="btn-utama btn-kecil">
+                    <i class="fa-solid fa-user"></i> Lihat Profil
+                </a>
+            </div>
+            <div class="anggota-card">
+                <div class="card-crown"><i class="fa-solid fa-crown"></i> #4</div>
+                <div class="avatar-ring">
+                    <img src="IMG-VIDIO-AUDIO/fto wulan 1.jpeg" alt="Wulan" onerror="this.src='https://via.placeholder.com/110?text=Wulan'">
+                </div>
+                <h3>Wulan Anjani</h3>
+                <p>Dipanggil: <strong>Wulan</strong></p>
+                <a href="#page-wulan" class="btn-utama btn-kecil">
+                    <i class="fa-solid fa-user"></i> Lihat Profil
+                </a>
+            </div>
+            <div class="anggota-card">
+                <div class="card-crown"><i class="fa-solid fa-crown"></i> #5</div>
+                <div class="avatar-ring">
+                    <img src="IMG-VIDIO-AUDIO/fto may 3.jpeg" alt="Zihan" onerror="this.src='https://via.placeholder.com/110?text=Zihan'">
+                </div>
+                <h3>Zihan May Pahira</h3>
+                <p>Dipanggil: <strong>Zihan</strong></p>
+                <a href="#page-zihan" class="btn-utama btn-kecil">
+                    <i class="fa-solid fa-user"></i> Lihat Profil
+                </a>
+            </div>
+        </main>
+
+        <div class="link-album-bawah">
+            <a href="#page-album2" class="cta-link">
+                <i class="fa-solid fa-camera-retro"></i> Klik di sini untuk mengunjungi album &rarr;
+            </a>
+
+             <div class="aksi-musik">
+                <button id="btn-musik-utama" class="btn-utama btn-hijau" onclick="toggleMusik('bg-music', 'btn-musik-utama')">
+                    <i class="fa-solid fa-play"></i> Putar Musik Latar
+                </button>
+            </div>
+        </div>
+
+        <div class="nav-bawah-halaman">
+            <a href="#page-utama" class="btn-utama btn-gelap">
+                <i class="fa-solid fa-arrow-left"></i> Halaman 1
+            </a>
+            <a href="#page-album2" class="btn-utama">
+                Album Kenangan <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+    <section id="page-album2" class="halaman-section">
+        <header class="page-header">
+            <span class="sub-badge"><i class="fa-solid fa-images"></i> 12 Momen Spesial</span>
+            <h1 class="judul-album">Album Kenangan</h1>
+            <div class="header-divider"><span>📸</span></div>
+        </header>
+        
+        <div class="aksi-musik">
+                <button id="btn-musik-utama" class="btn-utama btn-hijau" onclick="toggleMusik('bg-music', 'btn-musik-utama')">
+                    <i class="fa-solid fa-play"></i> Putar Musik Latar
+                </button>
+          </div>
+
+        <div class="album-grid">
+            <div class="foto-item polaroid">
+                <div class="washi-tape tape-pink"></div>
+                <img src="IMG-VIDIO-AUDIO/fto brsma 1.jpeg" alt="Foto 1">
+                <div class="caption">🍜 Nyeblak</div>
+            </div>
+            <div class="foto-item polaroid">
+                <div class="washi-tape tape-mint"></div>
+                <img src="IMG-VIDIO-AUDIO/fto brsma 2.jpeg" alt="Foto 2">
+                <div class="caption">💐 Nikahan Teh Dea</div>
+            </div>
+            <div class="foto-item polaroid">
+                <div class="washi-tape tape-gold"></div>
+                <img src="IMG-VIDIO-AUDIO/fto brsma 3.jpeg" alt="Foto 3">
+                <div class="caption">💻 RPL</div>
+            </div>
+            <div class="foto-item polaroid">
+                <div class="washi-tape tape-blue"></div>
+                <img src="IMG-VIDIO-AUDIO/fto brsma 4.jpeg" alt="Foto 4">
+                <div class="caption">🥾 Heaking</div>
+            </div>
+            <div class="foto-item polaroid">
+                <div class="washi-tape tape-purple"></div>
+                <img src="IMG-VIDIO-AUDIO\fto brsma 5.jpeg" alt="Foto 5">
+                <div class="caption">🎈 Maen</div>
+            </div>
+            <div class="foto-item polaroid">
+                <div class="washi-tape tape-pink"></div>
+                <img src="IMG-VIDIO-AUDIO\fto brsma 6.jpeg" alt="Foto 6">
+                <div class="caption">🎭 Demos</div>
+            </div>
+            <div class="foto-item polaroid">
+                <div class="washi-tape tape-mint"></div>
+                <img src="IMG-VIDIO-AUDIO\fto brsma 7.jpeg" alt="Foto 7">
+                <div class="caption">📒 Rapot</div>
+            </div>
+            <div class="foto-item polaroid">
+                <div class="washi-tape tape-gold"></div>
+                <img src="IMG-VIDIO-AUDIO\fto brsma 8.jpeg" alt="Foto 8">
+                <div class="caption">🏃‍♀️ Senam</div>
+            </div>
+            <div class="foto-item polaroid">
+                <div class="washi-tape tape-blue"></div>
+                <img src="IMG-VIDIO-AUDIO\fto brsma 9.jpeg" alt="Foto 9">
+                <div class="caption">💃 Nari</div>
+            </div>
+            <div class="foto-item polaroid">
+                <div class="washi-tape tape-purple"></div>
+                <img src="IMG-VIDIO-AUDIO\img_nugas.jpeg" alt="Foto 10">
+                <div class="caption">📚 Kelompok</div>
+            </div>
+            <div class="foto-item polaroid">
+                <div class="washi-tape tape-pink"></div>
+                <img src="IMG-VIDIO-AUDIO\pto5.jpeg" alt="Foto 11">
+                <div class="caption">🎒 Pulsek</div>
+            </div>
+            <div class="foto-item polaroid">
+                <div class="washi-tape tape-mint"></div>
+                <img src="IMG-VIDIO-AUDIO\pto6.jpeg" alt="Foto 12">
+                <div class="caption">🛍️ Tugas</div>
+            </div>
+        </div>
+
+        <div class="nav-bawah-halaman">
+            <a href="#page-biodata" class="btn-utama btn-gelap">
+                <i class="fa-solid fa-arrow-left"></i> Biodata Kami
+            </a>
+            <a href="#page-lena" class="btn-utama">
+                Profil Lena <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+    <section id="page-lena" class="halaman-section">
+        <div class="card profile-card-decorated">
+            <div class="profile-banner banner-pink">
+                <span class="banner-deco">✿ ✦ ✿</span>
+            </div>
+            <div class="profile-header">
+                <div class="profile-img-wrap">
+                    <img src="IMG-VIDIO-AUDIO/fto lna 1.jpeg" alt="Foto Profil" class="profile-img">
+                    <span class="status-sticker">💕</span>
+                </div>
+                <h1 class="name">Lena Aulia Sausan Salsabila Kamandaka</h1>
+                <p class="nickname"><i class="fa-solid fa-tag"></i> Dipanggil: <span>Lena</span></p>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3><i class="fa-solid fa-utensils"></i> Makanan Favorit</h3>
+                    <div class="chip-list">
+                        <span class="chip chip-food">🌶️ Seblak</span>
+                        <span class="chip chip-food">🍜 Mie Ayam</span>
+                        <span class="chip chip-food">🥢 Tahu Gejrot</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fa-solid fa-heart"></i> Hobi</h3>
+                    <div class="chip-list">
+                        <span class="chip chip-hobby">🎧 Mendengarkan Musik</span>
+                        <span class="chip chip-hobby">📖 Baca Novel/Au</span>
+                        <span class="chip chip-hobby">🧋 Jajan</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info-card mb-16">
+                <h3><i class="fa-solid fa-graduation-cap"></i> Riwayat Pendidikan</h3>
+                <ul>
+                    <li>SD: SDN CAMPAKASARI</li>
+                    <li>SMP: SMPN 2 HAURGEULIS</li>
+                    <li>SMK: SMKN 1 GANTAR</li>
+                </ul>
+            </div>
+            <div class="info-card mb-16">
+                <h3><i class="fa-solid fa-id-card"></i> Identitas</h3>
+                <ul>
+                    <li>TTL: Indramayu 1 Juli 2010</li>
+                    <li>Umur: 16 Tahun</li>
+                    <li>Jenis kelamin: Perempuan</li>
+                    <li>Agama: Islam</li>
+                    <li>Alamat: Kertanegara Blok 21</li>
+                </ul>
+            </div>
+            <div class="media-card mb-16">
+                <h3><i class="fa-solid fa-music"></i> Lagu Favorit</h3>
+                <p class="media-title">Jatuh Suka</p>
+                <audio controls>
+                    <source src="IMG-VIDIO-AUDIO/audio mp3 lena.mpeg" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="media-card">
+                <h3><i class="fa-solid fa-film"></i> Film Favorit</h3>
+                <p class="media-title">Trailer / Video Sample</p>
+                <div class="video-wrapper">
+                    <video controls poster="IMG-VIDIO-AUDIO/doraemon.jpeg">
+                        <source src="IMG-VIDIO-AUDIO\vidio_lena.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="nav-bawah-halaman">
+                <a href="#page-biodata" class="btn-utama btn-gelap">
+                    <i class="fa-solid fa-users"></i> Biodata Kami
+                </a>
+                <a href="#page-sulastri" class="btn-utama">
+                    Profil Sulastri <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="page-sulastri" class="halaman-section">
+        <div class="card profile-card-decorated">
+            <div class="profile-banner banner-purple">
+                <span class="banner-deco">✨ 💫 ✨</span>
+            </div>
+            <div class="profile-header">
+                <div class="profile-img-wrap">
+                    <img src="IMG-VIDIO-AUDIO/foto ati 1.jpeg" alt="Foto Profil" class="profile-img">
+                    <span class="status-sticker">🌸</span>
+                </div>
+                <h1 class="name">Sulastri</h1>
+                <p class="nickname"><i class="fa-solid fa-tag"></i> Dipanggil: <span>Lastri</span></p>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3><i class="fa-solid fa-utensils"></i> Makanan Favorit</h3>
+                    <div class="chip-list">
+                        <span class="chip chip-food">🌶️ Seblak</span>
+                        <span class="chip chip-food">🥟 Dimsum</span>
+                        <span class="chip chip-food">🦐 Seafood</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fa-solid fa-heart"></i> Hobi</h3>
+                    <div class="chip-list">
+                        <span class="chip chip-hobby">🌿 Healing</span>
+                        <span class="chip chip-hobby">🍳 Memasak</span>
+                        <span class="chip chip-hobby">🎮 Main Game</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info-card mb-16">
+                <h3><i class="fa-solid fa-graduation-cap"></i> Riwayat Pendidikan</h3>
+                <ul>
+                    <li>SD: SDN SALAM</li>
+                    <li>SMP: SMPN 1 GANTAR</li>
+                    <li>SMK: SMKN 1 GANTAR</li>
+                </ul>
+            </div>
+            <div class="info-card mb-16">
+                <h3><i class="fa-solid fa-id-card"></i> Identitas</h3>
+                <ul>
+                    <li>TTL: Indramayu 22 April 2010</li>
+                    <li>Umur: 16 Tahun</li>
+                    <li>Jenis kelamin: Perempuan</li>
+                    <li>Agama: Islam</li>
+                    <li>Alamat: Kedung kacip</li>
+                </ul>
+            </div>
+            <div class="media-card mb-16">
+                <h3><i class="fa-solid fa-music"></i> Lagu Favorit</h3>
+                <p class="media-title">Cinta Terlarang</p>
+                <audio controls>
+                    <source src="IMG-VIDIO-AUDIO/audio mp3 ati.mpeg" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="media-card">
+                <h3><i class="fa-solid fa-film"></i> Film Favorit</h3>
+                <p class="media-title">Film JKF SQUAD</p>
+                <div class="video-wrapper">
+                    <video controls poster="IMG-VIDIO-AUDIO\IMG fto jkf mp3.jpeg">
+                        <source src="IMG-VIDIO-AUDIO\vidio_ati.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="nav-bawah-halaman">
+                <a href="#page-lena" class="btn-utama btn-gelap">
+                    <i class="fa-solid fa-arrow-left"></i> Profil Lena
+                </a>
+                <a href="#page-tri" class="btn-utama">
+                    Profil Tri <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="page-tri" class="halaman-section">
+        <div class="card profile-card-decorated">
+            <div class="profile-banner banner-blue">
+                <span class="banner-deco">✨ 🪼 ✨</span>
+            </div>
+            <div class="profile-header">
+                <div class="profile-img-wrap">
+                    <img src="IMG-VIDIO-AUDIO\foto tri 1.jpeg" alt="Foto Profil" class="profile-img">
+                    <span class="status-sticker">🌷 </span>
+                </div>
+                <h1 class="name">Tri Rahayu</h1>
+                <p class="nickname"><i class="fa-solid fa-tag"></i> Dipanggil: <span>Tri</span></p>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3><i class="fa-solid fa-utensils"></i> Makanan Favorit</h3>
+                    <div class="chip-list">
+                        <span class="chip chip-food">🌶️ Seblak</span>
+                        <span class="chip chip-food">🍲 Bakso</span>
+                        <span class="chip chip-food">🍜 Mie Ayam</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fa-solid fa-heart"></i> Hobi</h3>
+                    <div class="chip-list">
+                        <span class="chip chip-hobby">🎧 Mendengarkan Musik</span>
+                        <span class="chip chip-hobby">🎬 Menonton Film</span>
+                        <span class="chip chip-hobby">🛵 Jalan-jalan</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info-card mb-16">
+                <h3><i class="fa-solid fa-graduation-cap"></i> Riwayat Pendidikan</h3>
+                <ul>
+                    <li>SD: SDN 2 Kertanegara</li>
+                    <li>SMP: SMPN 2 Haurgeulis</li>
+                    <li>SMK: SMKN 1 GANTAR</li>
+                </ul>
+            </div>
+            <div class="info-card mb-16">
+                <h3><i class="fa-solid fa-id-card"></i> Identitas</h3>
+                <ul>
+                    <li>TTL: Indramayu 17 Desember 2009</li>
+                    <li>Umur: 16 Tahun</li>
+                    <li>Jenis kelamin: Perempuan</li>
+                    <li>Agama: Islam</li>
+                    <li>Alamat: Kertanegara Blok 12</li>
+                </ul>
+            </div>
+            <div class="media-card mb-16">
+                <h3><i class="fa-solid fa-music"></i> Lagu Favorit</h3>
+                <p class="media-title">Jawara Cinta</p>
+                <audio controls>
+                    <source src="IMG-VIDIO-AUDIO/audio tri mp3.mpeg" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="media-card">
+                <h3><i class="fa-solid fa-film"></i> Film Favorit</h3>
+                <p class="media-title">Film Paw Patrol</p>
+                <div class="video-wrapper">
+                    <video controls poster="IMG-VIDIO-AUDIO/fto patroli.jpeg">
+                        <source src="IMG-VIDIO-AUDIO\vidio_tri.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="nav-bawah-halaman">
+                <a href="#page-sulastri" class="btn-utama btn-gelap">
+                    <i class="fa-solid fa-arrow-left"></i> Profil Sulastri
+                </a>
+                <a href="#page-wulan" class="btn-utama">
+                    Profil Wulan <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="page-wulan" class="halaman-section">
+        <div class="card profile-card-decorated">
+            <div class="profile-banner banner-mint">
+                <span class="banner-deco">🍀 ✨ 🍀</span>
+            </div>
+            <div class="profile-header">
+                <div class="profile-img-wrap">
+                    <img src="IMG-VIDIO-AUDIO/fto wulan 1.jpeg" alt="Foto Profil" class="profile-img">
+                    <span class="status-sticker">🍭</span>
+                </div>
+                <h1 class="name">Wulan Anjani</h1>
+                <p class="nickname"><i class="fa-solid fa-tag"></i> Dipanggil: <span>Wulan</span></p>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3><i class="fa-solid fa-utensils"></i> Makanan Favorit</h3>
+                    <div class="chip-list">
+                        <span class="chip chip-food">🌶️ Seblak</span>
+                        <span class="chip chip-food">🥟 Dimsum</span>
+                        <span class="chip chip-food">🍗 Ayam Geprek</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fa-solid fa-heart"></i> Hobi</h3>
+                    <div class="chip-list">
+                        <span class="chip chip-hobby">🔮 Nonton KHW</span>
+                        <span class="chip chip-hobby">🎈 Main</span>
+                        <span class="chip chip-hobby">🎧 Mendengarkan Musik</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info-card mb-16">
+                <h3><i class="fa-solid fa-graduation-cap"></i> Riwayat Pendidikan</h3>
+                <ul>
+                    <li>SD: SDN 1 KERTANEGARA</li>
+                    <li>SMP: SMPN 2 HAURGEULIS</li>
+                    <li>SMK: SMKN 1 GANTAR</li>
+                </ul>
+            </div>
+            <div class="info-card mb-16">
+                <h3><i class="fa-solid fa-id-card"></i> Identitas</h3>
+                <ul>
+                    <li>TTL: Indramayu 16 Januari 2010</li>
+                    <li>Umur: 16 Tahun</li>
+                    <li>Jenis kelamin: Perempuan</li>
+                    <li>Agama: Islam</li>
+                    <li>Alamat: Kertanegara blok 19</li>
+                </ul>
+            </div>
+            <div class="media-card mb-16">
+                <h3><i class="fa-solid fa-music"></i> Lagu Favorit</h3>
+                <p class="media-title">Surat Cinta Untuk Starla</p>
+                <audio controls>
+                    <source src="IMG-VIDIO-AUDIO/audio mp3 wulan.mpeg" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="media-card">
+                <h3><i class="fa-solid fa-film"></i> Film Favorit</h3>
+                <p class="media-title">KHW Nadia Omara</p>
+                <div class="video-wrapper">
+                    <video controls poster="IMG-VIDIO-AUDIO/fto khw.jpeg">
+                        <source src="IMG-VIDIO-AUDIO\vidio_wulan.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="nav-bawah-halaman">
+                <a href="#page-tri" class="btn-utama btn-gelap">
+                    <i class="fa-solid fa-arrow-left"></i> Profil Tri
+                </a>
+                <a href="#page-zihan" class="btn-utama">
+                    Profil Zihan <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="page-zihan" class="halaman-section">
+        <div class="card profile-card-decorated">
+            <div class="profile-banner banner-peach">
+                <span class="banner-deco">🍓 ✦ 🍓</span>
+            </div>
+            <div class="profile-header">
+                <div class="profile-img-wrap">
+                    <img src="IMG-VIDIO-AUDIO/fto may 3.jpeg" alt="Foto Profil" class="profile-img">
+                    <span class="status-sticker">🍓</span>
+                </div>
+                <h1 class="name">Zihan May Pahira</h1>
+                <p class="nickname"><i class="fa-solid fa-tag"></i> Dipanggil: <span>Zihan</span></p>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3><i class="fa-solid fa-utensils"></i> Makanan Favorit</h3>
+                    <div class="chip-list">
+                        <span class="chip chip-food">🌶️ Seblak</span>
+                        <span class="chip chip-food">🥟 Dimsum</span>
+                        <span class="chip chip-food">🍗 Ayam Geprek</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fa-solid fa-heart"></i> Hobi</h3>
+                    <div class="chip-list">
+                        <span class="chip chip-hobby">🎧 Mendengarkan Musik</span>
+                        <span class="chip chip-hobby">🎬 Menonton Film</span>
+                        <span class="chip chip-hobby">🧋 Jajan</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info-card mb-16">
+                <h3><i class="fa-solid fa-graduation-cap"></i> Riwayat Pendidikan</h3>
+                <ul>
+                    <li>SD: SDN Cipedang Bunder</li>
+                    <li>SMP: SMPN 2 HAURGEULIS</li>
+                    <li>SMK: SMKN 1 GANTAR</li>
+                </ul>
+            </div>
+            <div class="info-card mb-16">
+                <h3><i class="fa-solid fa-id-card"></i> Identitas</h3>
+                <ul>
+                    <li>TTL: Indramayu 25 Mei 2009</li>
+                    <li>Umur: 17 Tahun</li>
+                    <li>Jenis kelamin: Perempuan</li>
+                    <li>Agama: Islam</li>
+                    <li>Alamat: Cipedang Bunder</li>
+                </ul>
+            </div>
+            <div class="media-card mb-16">
+                <h3><i class="fa-solid fa-music"></i> Lagu Favorit</h3>
+                <p class="media-title">Teh Hijau</p>
+                <audio controls>
+                    <source src="IMG-VIDIO-AUDIO\audio mp3 zihan.mpeg" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="media-card">
+                <h3><i class="fa-solid fa-film"></i> Film Favorit</h3>
+                <p class="media-title">Film Upin-Ipin</p>
+                <div class="video-wrapper">
+                    <video controls poster="IMG-VIDIO-AUDIO/IMG fto upin ipin may.jpeg">
+                        <source src="IMG-VIDIO-AUDIO\vidio_zihan.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="nav-bawah-halaman">
+                <a href="#page-wulan" class="btn-utama btn-gelap">
+                    <i class="fa-solid fa-arrow-left"></i> Profil Wulan
+                </a>
+                <a href="#page-utama" class="btn-utama">
+                    Kembali ke Halaman 1 <i class="fa-solid fa-house"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pemanggilan JavaScript Terpisah -->
+    <script src="js_tugas.js"></script>
+</body>
+</html>
